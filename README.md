@@ -32,9 +32,21 @@ classDiagram
 
 ```mermaid
 classDiagram
-    class Reader
-    Reader : +getAllStudents(students)
-    Reader : +haveCertification(students)
-    Reader : +haveCertificationEmail(students)
-    Reader : +creditsGreatherThan500(students)
+    class StudentService
+    StudentService : +getAllStudents(students)
+    StudentService : +haveCertificationEmail(students)
+    StudentService : +creditsGreaterThan500(students)
+```
+
+### __Student Controller__
+- `getAllStudents()`: Retorna un arreglo de objetos con los datos de todos los estudiantes.
+- `haveCertificationEmail()`: Retorna un arreglo de objetos con los emails de los estudiantes que tienen certificación.
+- `creditsGreaterThan500()`: Retorna un arreglo de objetos con los datos de todos los estudiantes que tienen más de 500 créditos.
+
+```mermaid
+classDiagram
+    class StudentController
+    StudentController : +getAllStudents()
+    StudentController : +haveCertificationEmail()
+    StudentController : +creditsGreaterThan500()
 ```

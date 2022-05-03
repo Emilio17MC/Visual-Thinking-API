@@ -60,7 +60,7 @@ describe("Tests para StudentService", () => {
             {name: "Student 5", "credits": 150},
         ];
 
-        expect(StudentService.creditsGreatherThan500(students)).toMatchObject([
+        expect(StudentService.creditsGreaterThan500(students)).toMatchObject([
             {name: "Student 1", "credits": 550},
             {name: "Student 2", "credits": 750},
         ]);
