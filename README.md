@@ -18,10 +18,23 @@ graph TD;
 ```
 
 ### __Reader__
-Reader permitirá leer los archivos de JSON y también dará el formato JSON para el return.
+Utilizando la función ```readJsonFile(path)``` retornará el archivo JSON que se encuentra en el path especificado.
 ```mermaid
 classDiagram
     class Reader
     Reader : +readJsonFile(path)
 ```
+### __Student Service__
+- `getStudents(students)`: Retorna un arreglo de objetos con  los datos de todos los estudiantes.
+- `haveCertification(students)`: Retorna un arreglo de objetos con los datos de todos los estudiantes que tienen certificación.
+- `haveCertificationEmail(students)`: Retorna un arreglo de objetos con los emails de los estudiantes que tienen certificación.
+- `creditsGreaterThan500(students)`: Retorna un arreglo de objetos con los datos de todos los estudiantes que tienen más de 500 créditos.
 
+```mermaid
+classDiagram
+    class Reader
+    Reader : +getAllStudents(students)
+    Reader : +haveCertification(students)
+    Reader : +haveCertificationEmail(students)
+    Reader : +creditsGreatherThan500(students)
+```
