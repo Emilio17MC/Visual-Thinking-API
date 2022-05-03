@@ -6,8 +6,8 @@ describe("Tests para StudentService", () => {
         expect(StudentController.getAllStudents()).not.toBeUndefined();
     });
 
-    test("2. Retornar los estudiantes que tengan ungan certificación", () => {
-        
+    test("2. Retornar los estudiantes que tengan una certificación", () => {
+        console.log(StudentController.haveCertificationEmail());
         expect(StudentController.haveCertificationEmail()).not.toBeUndefined();
     });
 

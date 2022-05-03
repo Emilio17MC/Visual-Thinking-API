@@ -45,9 +45,9 @@ describe("Tests para StudentService", () => {
         ];
 
         expect(StudentService.haveCertificationEmail(students)).toMatchObject([
-            {email: "student1@mail.com"},
-            {email: "student2@mail.com"},
-            {email: "student5@mail.com"},
+            "student1@mail.com",
+            "student2@mail.com",
+            "student5@mail.com",
         ]);
     });
 
